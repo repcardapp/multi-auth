@@ -219,8 +219,8 @@ class MultiAuthInstallCommand extends InstallAndReplaceCommand
     {
         return [
             ['force', 'f', InputOption::VALUE_NONE, 'Force override existing files'],
-            ['domain', false, InputOption::VALUE_NONE, 'Install in a subdomain'],
-            ['lucid', false, InputOption::VALUE_NONE, 'Lucid architecture'],
+            ['domain', null, InputOption::VALUE_NONE, 'Install in a subdomain'],
+            ['lucid', null, InputOption::VALUE_NONE, 'Lucid architecture'],
             ['model', null, InputOption::VALUE_NONE, 'Exclude model and migration'],
             ['views', null, InputOption::VALUE_NONE, 'Exclude views'],
             ['routes', null, InputOption::VALUE_NONE, 'Exclude routes'],

@@ -36,7 +36,7 @@ class AuthModelInstallCommand extends InstallFilesCommand
     {
         $parentOptions = parent::getOptions();
         return array_merge($parentOptions, [
-            ['lucid', false, InputOption::VALUE_NONE, 'Lucid architecture'],
+            ['lucid', null, InputOption::VALUE_NONE, 'Lucid architecture'],
         ]);
     }
 

@@ -36,8 +36,8 @@ class AuthFilesInstallCommand extends InstallFilesCommand
     {
         $parentOptions = parent::getOptions();
         return array_merge($parentOptions, [
-            ['lucid', false, InputOption::VALUE_NONE, 'Lucid architecture'],
-            ['domain', false, InputOption::VALUE_NONE, 'Install in a subdomain'],
+            ['lucid', null, InputOption::VALUE_NONE, 'Lucid architecture'],
+            ['domain', null, InputOption::VALUE_NONE, 'Install in a subdomain'],
         ]);
     }
 
