@@ -11,6 +11,24 @@
 | 1.x     | 5.3 and 5.4     | EOL             | 1.0    | composer require hesto/multi-auth 1.*    |
 | 2.x     | 5.5, 5.6, 5.7   | Latest          | 2.0    | composer require hesto/multi-auth        |
 
+# Get Fork Repo
+## Update composer.json of our project 
+- ` "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/repcardapp/multi-auth"
+        }
+    ],`
+
+    And in require section
+
+- ` "require": {
+   .....
+    "hesto/multi-auth": "dev-master",
+    .....
+},`
+
+  
 
 ## What it does?
 With one simple command you can setup multi auth for your Laravel project. The package installs:
